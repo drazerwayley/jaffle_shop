@@ -72,4 +72,14 @@ final as (
 
 )
 
+
+finalmod as (
+
+    SELECT * FROM "FIVETRAN_LOG"."destination_membership" 
+
+)
+
+
 select * from final
+
+select * from finalmod
