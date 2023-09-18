@@ -4,6 +4,12 @@ with customers as (
 
 ),
 
+customers_mod as (
+
+select * from {{ref('stg_customers')}} where first_name='Jane'
+
+),
+
 orders as (
 
     select * from {{ ref('stg_orders') }}
